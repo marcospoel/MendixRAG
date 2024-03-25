@@ -41,6 +41,14 @@ All of these have the common theme of retrieving relevant resources and then und
 
 From this angle, you can consider an LLM a calculator for words.
 
+## The pipeline
+1. Collcion of documents
+2. Process the documents into smaller chunks
+3. Embedding, turning the text into e numerical representation
+4. Store the embeddings in a vector database
+5. Query
+6. Generate output using the LLM
+
 ## Key terms
 
 | Term | Description |
