@@ -48,3 +48,4 @@ authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
 keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
 ```
+Hit the `<Esc>` key and type `:wq` and hit `<Enter>`
