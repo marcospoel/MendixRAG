@@ -9,7 +9,8 @@ Open the file C:\Program Files\Git\usr\ssl\openssl.cnf and edit the section [ v3
 
 The section should say:
 
-`    basicConstraints        =critical, CA:TRUE
+`    
+     basicConstraints        =critical, CA:TRUE
 
     subjectKeyIdentifier    =hash
     
