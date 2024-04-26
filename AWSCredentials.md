@@ -16,4 +16,9 @@ The section should say:
     keyUsage                =critical, cRLSign, digitalSignature, keyCertSign
 ```
 
+Open Git bash located: "C:\Program Files\Git\git-bash.exe"
+Create a certificate directory `mkdir certs`
+
+winpty openssl genrsa -out PrivateCA.key 4096
+
 
