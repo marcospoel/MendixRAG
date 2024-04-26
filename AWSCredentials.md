@@ -66,4 +66,8 @@ winpty openssl x509 -req -in client.csr -CA PrivateCA.pem -CAkey PrivateCA.key -
 Your directory should contain the following files:
 PrivateCA.key  PrivateCA.pem  client.csr  client.key  client.pem  v3.ext
 
+There is one more step to be able to use our certificates in our Mendix application: We need to export our client certificate to the pfx format which can be uploaded to our app.
 
+```
+winpty openssl pkcs12 -export -in client.pem -inkey client.key -certpbe PBE-SHA1-3DES -keypbe PBE-SHA1-3DES -macalg sha1 -out client.pfx
+```
