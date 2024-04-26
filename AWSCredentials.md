@@ -8,9 +8,13 @@ Install Git for Windows: [download](https://git-scm.com/download/win)
 Open the file C:\Program Files\Git\usr\ssl\openssl.cnf and edit the section [ v3_ca ]
 
 The section should say:
+
 `    basicConstraints        =critical, CA:TRUE
+
     subjectKeyIdentifier    =hash
+    
     authorityKeyIdentifier  =keyid:always, issuer:always
+    
     keyUsage                =critical, cRLSign, digitalSignature, keyCertSign`
 
 
