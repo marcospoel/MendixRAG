@@ -42,7 +42,7 @@ Put a file named v3.ext in the same directory as your root certificate, with the
 ```
 vi v3.ext
 ```
-Hit the <i> key to start inserting and paste the following text:
+Hit the `<i>` key to start inserting and paste the following text:
 ```
 authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
