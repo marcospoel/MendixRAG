@@ -56,5 +56,10 @@ winpty openssl genrsa -out client.key 4096
 winpty openssl req -new -key client.key -out client.csr
 ```
 
-Fil in and give a challange password (and remember it)
+Fill in and give a challenge password (and remember it)
+
+Lastly, we sign it with our root CA
+```
+winpty openssl x509 -req -in client.csr -CA PrivateCA.pem -CAkey PrivateCA.key -set_serial 01 -out client.pem -days 3650 -sha256 -extfile v3.ext
+```
 
