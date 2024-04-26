@@ -19,6 +19,8 @@ The section should say:
 Open Git bash located: "C:\Program Files\Git\git-bash.exe"
 Create a certificate directory `mkdir certs`
 
+Execute the commands:
+```
 winpty openssl genrsa -out PrivateCA.key 4096
-
+```
 
