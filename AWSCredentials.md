@@ -63,3 +63,7 @@ Lastly, we sign it with our root CA
 winpty openssl x509 -req -in client.csr -CA PrivateCA.pem -CAkey PrivateCA.key -set_serial 01 -out client.pem -days 3650 -sha256 -extfile v3.ext
 ```
 
+Your directory should contain the following files:
+PrivateCA.key  PrivateCA.pem  client.csr  client.key  client.pem  v3.ext
+
+
