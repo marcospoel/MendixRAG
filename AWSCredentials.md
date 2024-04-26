@@ -71,3 +71,4 @@ There is one more step to be able to use our certificates in our Mendix applicat
 ```
 winpty openssl pkcs12 -export -in client.pem -inkey client.key -certpbe PBE-SHA1-3DES -keypbe PBE-SHA1-3DES -macalg sha1 -out client.pfx
 ```
+You should enter a password that you need later, so remember it well!
