@@ -24,3 +24,6 @@ Execute the commands:
 winpty openssl genrsa -out PrivateCA.key 4096
 ```
 
+```
+winpty openssl req -new -x509 -days 3650 -key PrivateCA.key -out PrivateCA.pem -extensions v3_ca
+```
