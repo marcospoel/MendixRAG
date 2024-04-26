@@ -48,4 +48,13 @@ authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
 keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
 ```
-Hit the `<Esc>` key and type `:wq` and hit `<Enter>`
+Hit the `<Esc>` key and type `:wq` and hit `<Enter>` to write the file
+
+Issue the following commands:
+```
+winpty openssl genrsa -out client.key 4096
+winpty openssl req -new -key client.key -out client.csr
+```
+
+Fil in and give a challange password (and remember it)
+
