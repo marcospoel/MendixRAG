@@ -9,11 +9,11 @@ Open the file C:\Program Files\Git\usr\ssl\openssl.cnf and edit the section [ v3
 
 The section should say:
 
-  ```
-    basicConstraints        =critical, CA:TRUE
-    subjectKeyIdentifier    =hash  
-    authorityKeyIdentifier  =keyid:always, issuer:always
-    keyUsage                =critical, cRLSign, digitalSignature, keyCertSign
+```
+basicConstraints        =critical, CA:TRUE
+subjectKeyIdentifier    =hash
+authorityKeyIdentifier  =keyid:always, issuer:always
+keyUsage                =critical, cRLSign, digitalSignature, keyCertSign
 ```
 
 Open Git bash located: "C:\Program Files\Git\git-bash.exe"
